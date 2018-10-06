@@ -1,47 +1,36 @@
-var http = require('http');
-var fs = require('fs');
+const fs = require('fs');
+const express = require('express');
+const app = express();
+var path = require('path')
 
-http.createServer(function (req, res) {
-  fs.readFile('demofile1.html', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    res.end();
-  });
-}).listen(8080);
+var server = app.listen(8080);
 
+app.use(express.static(path.join(__dirname, 'View'))); 
 
-var app = angular.module('myApp', []);
-app.controller('cadCli', function($scope, $http) {
-    $http.get("cadastro_cliente.htm")
-    .then(function(response) {
-        //First function handles success
-        $scope.content = response.data;
-    }, function(response) {
-        //Second function handles error
-        $scope.content = "Something went wrong";
-    });
-})
-
-
-var app = angular.module('myApp', []);
-app.controller('cadPet', function($scope, $http) {
-    $http.get("cadastro_pet.htm")
-    .then(function(response) {
-        //First function handles success
-        $scope.content = response.data;
-    }, function(response) {
-        //Second function handles error
-        $scope.content = "Something went wrong";
-    });
-})
-
-/*
-$(document).ready(function(){
-    $("#myInput").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("#myTable tr").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
+app.get('/', function(req, res){
+    fs.readFile('View/index.html', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        res.end();
     });
 });
-*/
+
+app.get('/cadastrarPet', function(req, res){
+    fs.readFile('View/cadastro_pet.html', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        res.end();
+    });
+});
+
+app.get('/cadastrarCliente', function(req, res){
+    fs.readFile('View/cadastro_cliente.html', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        res.end();
+    });
+});
+
+
+
+

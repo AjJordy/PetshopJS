@@ -1,7 +1,12 @@
+
 #btnCadast {
     padding: 10px 40px;
+    background-color:rgb(86, 158, 86);
+    color: white
 }
 
-#btnFin {
+#btnPet {
     padding: 10px 26px; 
+    background-color:rgb(86, 158, 86);
+    color: white
 }

@@ -6,30 +6,32 @@
     <title>Petshop Espaço Harmonia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
-    <script src="main.js"></script>
 
     <!-- Icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     
     <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+
+    <!-- Meu script  -->
+    <script src='app.js'></script>
 
 </head>
-<body>
-    
-    <div class="container-fluid" style="background-color:rgb(234, 241, 236)">
-        <div class="row content" >
+<body>    
+    <div id="Principal" ng-app="myApp" class="container-fluid" style="background-color:rgb(221, 247, 228)">
+        <div class="row content">
 
             <!-- Barra Lateral -->            
             <div class="col-sm-2 sidenav">
                 <h2>Petshop</h4>                
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#section1"><i class="fa fa-search"></i>Cliente</a></li>
+                    <li><a href="#section1" active><i class="fa fa-search"></i>Cliente</a></li>
                     <li><a href="#section2"><i class="fa fa-dollar"></i>Caixa</a></li>
                     <li><a href="#section3"><i class="fa fa-archive"></i>Estoque</a></li>                     
                 </ul>        
@@ -37,7 +39,7 @@
 
 
             <!-- Barra de pesquisa -->
-            <div class="col-sm-9" id="barra_pesquisa">        
+            <div class="col-sm-9" id="barra_pesquisa" style="padding-top:30px; padding-bottom: 20px">        
                 <form>
                     <div class="form-group">           
                         <input type="text" class="form-control" id="myInput" placeholder="Pesquisar">
@@ -50,67 +52,47 @@
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                        <th>Nome</th>
-                        <th>Sobrenome</th>
-                        <th>Email</th>           
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Email</th>           
                         </tr>
                     </thead>
                     <tbody id="myTable">
                         <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
                         </tr>
                         <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@mail.com</td>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@mail.com</td>
                         </tr>
                         <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@greatstuff.com</td>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@greatstuff.com</td>
                         </tr>
                         <tr>
-                        <td>Anja</td>
-                        <td>Ravendale</td>
-                        <td>a_r@test.com</td>
+                            <td>Anja</td>
+                            <td>Ravendale</td>
+                            <td>a_r@test.com</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-
-
-            <!-- <div ng-app="myApp" ng-controller="customersCtrl">
-                <table>
-                  <tr ng-repeat="x in names">
-                    <td>{{ x.nome }}</td>
-                    <td>{{ x.sobrenome }}</td>
-                    <td>{{ x.telefone }}</td>
-                    <td>{{ x.email }}</td>
-                  </tr>
-                </table>                
-            </div> -->
-
-
+            </div>      
             
-            <div ng-app="myApp" class="btn-group dropup" id="dropup">
-                <button type="button btn-lg" class="btn dropdown" data-toggle="dropdown" id="dup_bt">Cadastrar </button>
+            <div class="btn-group dropup" id="dropup">
+                <button type="button btn-lg" class="btn dropdown" data-toggle="dropdown" id="dup_bt" onclick="abrirCadastroPet()">Cadastrar</button>
                 <ul class="dropdown-menu" role="menu">
-                <li><a href="#"  ng-controller="cadCli">Cliente</a></li>
-                <li><a href="#"  ng-controller="cadPet">Pet</a></li>
+                <li><a href="#" routerLink="/cadastraCliente">Cliente</a></li>
+                <li><a href="#">Pet</a></li>
                 </ul>
-            </div>           
+            </div>     
             
-
-         
         
         </div>
-    </div>
-
+    </div>   
     
-    
-    
-       
 </body>
 </html>
