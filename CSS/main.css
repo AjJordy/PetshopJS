@@ -7,7 +7,27 @@
     padding-right: 50px; 
 }
 
-.button5 {
+#dropup {    
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    background-color:white;
+    color: rgb(0, 0, 0);    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+} 
+
+
+
+#dup_bt{
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 14px 40px;
+    font-weight: bold;
+}
+
+.fab {
     position: fixed;
     bottom: 40px;
     right: 60px;
@@ -17,13 +37,10 @@
     color: white;
     padding: 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 25px;    
     margin: 4px 2px;
     box-shadow: 2px 2px 5px rgb(177, 175, 175); 
 }
-
 
 .sidenav {
     height: 100%; 
@@ -41,13 +58,13 @@
 .sidenav a{
     padding-top: 10px;        
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
     display: block;
 }
 
  /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {    
+.sidenav a:hover {  
     background-color: rgb(179, 176, 176);  
 } 
 
@@ -57,16 +74,20 @@
 }
 
 .fa-archive{padding-right: 10px;}
-
 .fa-search{padding-right: 10px;}
 
 Style page content
+
 #main {
     margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {height: 1500px}  
+.row.content {height: 960px}  
+
+.row-fluid {
+    text-align: center;
+}
 
 
 /* Set black background color, white text and some padding */

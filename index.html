@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Petshop Espaço Harmonia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,8 +15,8 @@
 </head>
 <body>
     
-    <div class="container-fluid">
-        <div class="row content" style="background-color:rgb(234, 241, 236)">
+    <div class="container-fluid" style="background-color:rgb(234, 241, 236)">
+        <div class="row content" >
 
             <!-- Barra Lateral -->            
             <div class="col-sm-2 sidenav">
@@ -74,7 +74,17 @@
             </div>
 
 
-            <button class="button button5" onclick="cadastrar()">+</button>
+            
+            <div class="btn-group dropup" id="dropup">
+                <button type="button btn-lg" class="btn dropdown" data-toggle="dropdown" id="dup_bt">Cadastrar </button>
+                <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Cliente</a></li>
+                <li><a href="#">Pet</a></li>
+                </ul>
+            </div>           
+            
+
+         
         
         </div>
     </div>
