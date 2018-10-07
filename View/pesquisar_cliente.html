@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastrar Cliente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+   
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+      
+    <!-- Meu script  -->
+    <script src='app.js'></script>    
+    
+</head>
+<body style="background-color:rgb(221, 247, 228)">
+
+    <!-- Barra de pesquisa -->
+    <div class="col-sm-9" id="barra_pesquisa" style="padding-top:30px; padding-bottom: 20px">        
+        <form>
+            <div class="form-group">           
+                <input type="text" class="form-control" id="myInput" placeholder="Pesquisar">
+            </div>            
+        </form>
+    </div>  
+
+    <!-- Tabela -->
+    <div class="col-sm-9">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Email</th>           
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@mail.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@greatstuff.com</td>
+                </tr>
+                <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>      
+    
+    <div class="btn-group dropup" id="dropup">
+        <button type="button btn-lg" class="btn dropdown" data-toggle="dropdown" id="dup_bt" >Cadastrar</button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="CadastrarCliente" >Cliente</a></li>
+            <li><a href="CadastrarPet" >Pet</a></li>
+        </ul>
+    </div> 
+</body>
+</html>
