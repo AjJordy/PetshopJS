@@ -76,6 +76,17 @@
                 </div>
             </div>
         </div>          
-      </div>
-  </div>
+    </div>
+
+    <div class="btn-group dropup pull-right">
+        <button type="button" class="btn btn-success bmd-btn-fab dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons">add</i>
+        </button>           
+        <div class="dropdown-menu">
+            <button [routerLink]="['/cliente']" class="dropdown-item" type="button">Cadastrar Cliente</button>
+            <button [routerLink]="['/pet']" class="dropdown-item" type="button">Cadastrar Pet</button>
+        </div>
+    </div> 
+
+</div>
 </div>

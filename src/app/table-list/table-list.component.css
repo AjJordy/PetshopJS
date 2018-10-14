@@ -5,3 +5,7 @@
 .col-md-10 {
     padding-left: 300px
 }
+
+.dropdown-item:hover {
+    background-color: rgb(4, 167, 4)
+}
