@@ -1,0 +1,135 @@
+<div class="main-content">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header card-header-success">
+						<h4 class="card-title">Cadastrar Cliente</h4>
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<mat-form-field class="example-full-width">
+										<input matInput placeholder="Nome" type="text">
+									</mat-form-field>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">										
+									<mat-form-field class="example-full-width">
+										<input matInput placeholder="Telefone" type="text">
+									</mat-form-field>								
+								</div>
+								
+								<div class="col-md-4">
+									<mat-form-field class="example-full-width">
+											<input matInput placeholder="Celular" type="text">
+										</mat-form-field>										
+								</div>
+
+								<div class="col-md-4">
+									<div class="checkbox">
+										<label><input type="checkbox" value="" style="color:green; padding-left:15px; padding-top: 15px"> Whatsapp</label>
+									</div>
+								</div>
+							</div>
+					
+
+							<div class="row">
+								<div class="col-md-4">
+									<mat-form-field class="example-full-width">
+										<input matInput placeholder="Email" type="email">
+									</mat-form-field>
+								</div>
+								<div class="col-md-4">
+									<mat-form-field class="example-full-width">
+										<input matInput placeholder="CPF" type="tel">
+									</mat-form-field>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<mat-form-field class="example-full-width">
+										<input matInput placeholder="Endereço" type="text">
+									</mat-form-field>
+								</div>
+
+							</div>
+
+							<button mat-raised-button type="submit" class="btn btn-success pull-right">Cadastrar</button>
+
+
+							<div class="clearfix"></div>
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-header card-header-success">
+						<h4 class="card-title">Pets</h4>
+					</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table">
+								<thead class=" text-primary">
+									<th>Nome</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dakota Rice</td>
+									</tr>
+									<tr>
+										<td>Minerva Hooper</td>
+									</tr>
+									<tr>
+										<td>Sage Rodriguez</td>
+									</tr>
+								</tbody>
+							</table>
+							<button mat-raised-button [routerLink]="['/pet']" type="submit" class="btn btn-success pull-right">Cadastrar Pet</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-3">
+					<div class="card">
+						<div class="card-header card-header-success">
+							<h4 class="card-title">Responsáveis</h4>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table">
+									<thead class=" text-primary">
+										<th>Nome</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Dakota Rice</td>
+										</tr>
+										<tr>
+											<td>Minerva Hooper</td>
+										</tr>
+										<tr>
+											<td>Sage Rodriguez</td>
+										</tr>
+									</tbody>
+								</table>
+								<button mat-raised-button [routerLink]="['/parente']" type="submit" class="btn btn-success pull-right">Cadastrar Parente</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>

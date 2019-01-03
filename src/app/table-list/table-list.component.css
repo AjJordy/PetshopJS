@@ -7,5 +7,9 @@
 }
 
 .dropdown-item:hover {
-    background-color: rgb(4, 167, 4)
+    background-color: rgb(71, 185, 71)
+}
+
+.button {
+    width:100% ;
 }

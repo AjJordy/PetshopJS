@@ -1,0 +1,118 @@
+<div class="main-content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10">
+				<div class="card">
+					<div class="card-header card-header-success">
+						<h4 class="card-title">Cadastrar Pet</h4>
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<div class="col-md-6">
+									<mat-form-field class="example-full-width">
+										<input matInput placeholder="Nome" type="text">
+									</mat-form-field>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label class="radio-inline">
+									<input type="radio" name="sexo" id="Femea" value=""> Fêmea
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="sexo" id="Macho" value=""> Macho
+								</label>
+
+							</div>
+
+
+
+							<div class="col-md-6">
+								<label class="radio-inline">
+									<input type="radio" name="porte" id="Pequeno" value=""> Pequeno
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="porte" id="Medio" value=""> Médio
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="porte" id="Grande" value=""> Grande
+								</label>
+							</div>
+
+
+
+							<div class="col-md-6">
+								<label class="radio-inline">
+									<input type="radio" name="raca" id="Cachorro" value=""> Cachorro
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="raca" id="Gato" value=""> Gato
+								</label>
+							</div>
+
+							<div class="form-group col-md-6">
+								<mat-form-field class="example-full-width">
+									<input matInput placeholder="Alergia" type="text">
+								</mat-form-field>
+							</div>
+
+
+
+							<div class="form-group col-md-6">
+								<mat-form-field class="example-full-width">
+									<input matInput placeholder="Medicamentos" type="text">
+								</mat-form-field>
+							</div>
+
+
+							<div class="form-group col-md-6">
+								<mat-form-field class="example-full-width">
+									<input matInput placeholder="Problemas" type="text">
+								</mat-form-field>
+							</div>
+
+							<div class="form-group row">
+								<div class="checkbox">
+									<label><input type="checkbox" value=""> Perfume</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value=""> Castrado</label>
+								</div>
+							</div>
+
+
+							<div class="form-group col-md-6">
+								<mat-form-field class="example-full-width">
+									<input matInput placeholder="Observação" type="text">
+								</mat-form-field>
+							</div>
+
+							<div class="form-group col-md-8">
+								<label for="example-date-input" class="col-form-label ">Vermifugado</label>
+								<div class="col-6">
+									<input class="form-control" type="date" id="example-date-input">
+								</div>
+							</div>
+							<div class="form-group col-md-8">
+								<label for="example-date-input" class="col-form-label">V8</label>
+								<div class="col-6">
+									<input class="form-control" type="date" id="example-date-input">
+								</div>
+							</div>
+							<div class="form-group col-md-8">
+								<label for="example-date-input" class="col-form-label">Antirábica</label>
+								<div class="col-6">
+									<input class="form-control" type="date" id="example-date-input">
+								</div>
+							</div>
+
+							<button mat-raised-button [routerLink]="['/cliente']" type="submit" class="btn btn-success pull-right">Cadastrar</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
